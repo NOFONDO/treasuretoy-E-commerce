@@ -1,0 +1,5 @@
+-- Minimal demo rows. Replace with real, licensed stock before launch.
+insert into public.products (slug, sku, name, description, department, audience, category, manufacturer, scale, price_minor, stock, age_min, safety_notes, occasions, is_featured, is_published) values
+('velocity-rc-racer', 'K001', 'Velocity RC Racer', 'Fast 2.4GHz remote-control racer with rechargeable battery.', 'kids', 'children', 'Remote Control Cars', null, null, 3999, 12, 6, 'Contains small parts and batteries. Adult supervision recommended.', '{birthday,christmas}', true, true),
+('little-racers-gift-box', 'K002', 'Little Racers Gift Box', 'Six pocket-sized racers in a presentation box.', 'kids', 'children', 'Toy Car Gift Sets', null, null, 2999, 20, 3, 'Contains small parts.', '{christmas,birthday}', true, true),
+('prancing-gt-118', 'C001', 'Prancing GT 1:18 Diecast', 'Highly detailed 1:18 diecast with opening doors and bonnet.', 'collectors', 'collectors', 'Luxury Supercars', 'Ferrari', '1:18', 18999, 4, 14, 'Collector''s model, not a toy.', '{premium,christmas}', true, true);

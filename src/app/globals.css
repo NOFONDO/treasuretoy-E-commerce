@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #101827;
+  --color-navy-soft: #1b2639;
+  --color-gold: #c6a15b;
+  --color-gold-deep: #8a6b2b; /* gold text on light backgrounds (AA contrast) */
+  --color-ivory: #f8f6f1;
+  --color-charcoal: #252525;
+  --color-mist: #f2f3f5;
+  --font-display: "Playfair Display Variable", Georgia, serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-ivory text-charcoal font-sans antialiased; }
+  h1, h2, h3 { @apply font-display text-navy; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-gold-deep; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
